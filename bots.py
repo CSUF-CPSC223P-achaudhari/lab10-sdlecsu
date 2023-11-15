@@ -13,7 +13,7 @@ def bot_clerk(items, inv = None) :
     cart = []
     lock = threading.Lock()
 
-    f_lists = [[] for i in range(min(3, len(items)))]
+    f_lists = [[] for i in range(3)]
     for j, item in enumerate(items) :
         f_lists[j % len(f_lists)].append(item)
 
